@@ -433,7 +433,7 @@ namespace MVCBlog.Website.Controllers
             {
                 foreach (var item in search.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries))
                 {
-                    query = query.Where(e => e.Header.Contains(item));
+                    query = query.Where(e => e.Header.Contains(item) || e.Content.Contains(item) || e.ShortContent.Contains(item));
                 }
             }
 

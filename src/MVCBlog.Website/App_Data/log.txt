@@ -2,3 +2,119 @@
 2014-02-20 15:52:19,786 [5] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
 2014-02-20 15:52:30,957 [10] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
 2014-02-20 15:52:39,029 [5] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.DeleteBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command DeleteBlogEntryCommand
+2015-08-06 18:04:04,407 [7] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.DeleteBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command DeleteBlogEntryCommand
+2015-08-06 18:04:08,078 [8] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.DeleteBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command DeleteBlogEntryCommand
+2015-08-10 16:46:00,335 [6] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommand
+2015-08-10 17:32:03,877 [27] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:32:04,003 [27] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:32:25,268 [23] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:32:25,284 [23] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:32:35,565 [23] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:32:35,582 [23] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:33:04,759 [27] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:33:04,798 [27] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:33:45,814 [15] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:33:45,830 [15] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:35:13,108 [15] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:35:13,127 [15] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:35:43,347 [27] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:35:49,894 [27] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:35:50,018 [27] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:38:02,289 [15] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:38:02,466 [15] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:38:30,259 [20] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:38:30,294 [20] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:42:58,945 [15] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:42:58,993 [15] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:44:01,160 [15] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:44:01,193 [15] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-10 17:45:27,077 [31] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:45:50,908 [12] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:46:08,416 [12] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:46:19,100 [12] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-10 17:46:19,137 [12] ERROR MVCBlog.Core.Database.DatabaseContext [(null)] - Saving to database failed (Errors: BlogEntry_534CDFB424BE714A765D5DF285E855D3BF7B00CA0683934BB646374B48C60CC8 - Errors: Content: The field Content must be a string or array type with a maximum length of '4000'.)
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at System.Data.Entity.DbContext.SaveChangesAsync()
+   at MVCBlog.Core.Database.DatabaseContext.<>n__0()
+   at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
+2015-08-11 15:32:34,360 [69] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommand

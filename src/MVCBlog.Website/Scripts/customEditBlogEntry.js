@@ -1,5 +1,6 @@
 tinyMCE.init({
-    mode : "none",
+    mode : "exact",
+    elements: "BlogEntry_Content,BlogEntry_ShortContent",
     theme: "advanced",
     convert_urls : false,
     forced_root_block : false,
@@ -16,14 +17,6 @@ tinyMCE.init({
     theme_advanced_statusbar_location: "bottom",
     theme_advanced_resizing: true
 });
-        
-function toggleEdtitor(id) {
-    if (!tinyMCE.get(id)) {
-        tinyMCE.execCommand('mceAddControl', false, id);
-    } else {
-        tinyMCE.execCommand('mceRemoveControl', false, id);
-    }
-}
             
 function selectImage(ev) {
     var url = $("#ImageDropDown").val();

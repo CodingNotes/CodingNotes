@@ -4,7 +4,7 @@
     <ul class="list-inline">
         @foreach (var tag in this.Model)
         { 
-            <li><i class="glyphicon glyphicon-tag"></i> <a href="@Url.RouteUrl(MVCBlog.Website.Routes.TAG, new { tag = tag.Name })">@tag.Name</a></li>
+            <li><i class="icon-tag"></i> <a href="@Url.RouteUrl(MVCBlog.Website.Routes.TAG, new { tag = tag.Name })">@tag.Name</a></li>
         }
     </ul>
 </div>

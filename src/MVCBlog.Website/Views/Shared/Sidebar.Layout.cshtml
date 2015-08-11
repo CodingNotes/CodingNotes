@@ -14,15 +14,42 @@
     @RenderSection("HeroUnit", false)
 }
 
-<div class="row">
-    <div class="col-md-9">
-         @RenderBody()
-    </div>
-    <div class="col-md-3">
-        <h3>@Common.Tags</h3>
-        @{Html.RenderAction(MVC.Blog.Tags());}
+    
+    <div class="span4 vcard">
+        <div class="vcard-wrap">
+            <!-- begin .vcard-bio -->
+            <div class="vcard-bio">
+                <h3 class="vcard-name">Rovian Voelz Veronez</h3>
+                <!-- begin info -->
+                <h5 class="vcard-prof">Software Developer</h5>
+                <span class="vcard-info"><i class="icon-home"></i>Auckland, NZ</span><br />
+                <span class="vcard-info"><i class="icon-globe"></i><a href="https://nz.linkedin.com/in/rovianvz">https://nz.linkedin.com/in/rovianvz/</a></span><br />
+                <span class="vcard-info"><i class="icon-envelope"></i><a href="rovian@codingnotes.co.nz">rovian@codingnotes.co.nz</a></span><br />
+                <span class="vcard-info"><i class="icon-user"></i>@Html.ActionLink(@Common.About, MVC.About.Index())</span>
+                <!-- end info -->
+                <hr />
 
-        <h3>@Common.PopularPosts</h3>
-        @{Html.RenderAction(MVC.Blog.PopularBlogEntries());}
+                <h3 class="vcard-name">Murilo Santana</h3>
+                <!-- begin info -->
+                <h5 class="vcard-prof">Software Developer</h5>
+                <span class="vcard-info"><i class="icon-home"></i>Auckland, NZ</span><br />
+                <span class="vcard-info"><i class="icon-globe"></i><a href="https://nz.linkedin.com/in/murilosantana">https://nz.linkedin.com/in/murilosantana/</a></span><br />
+                <span class="vcard-info"><i class="icon-envelope"></i><a href="murilo@codingnotes.co.nz">murilo@codingnotes.co.nz</a></span><br />
+                <span class="vcard-info"><i class="icon-user"></i>@Html.ActionLink(@Common.About, MVC.About.Index())</span>
+
+                <hr />
+                <h3 class="vcard-name">@Common.Tags</h3>
+                @{Html.RenderAction(MVC.Blog.Tags());}
+                <hr />
+                <h3 class="vcard-name">@Common.PopularPosts</h3>
+                @{Html.RenderAction(MVC.Blog.PopularBlogEntries());}
+
+            </div>
+            <!-- end .vcard-bio -->
+            
+        </div>
+        
     </div>
-</div>
+
+    @RenderBody()
+

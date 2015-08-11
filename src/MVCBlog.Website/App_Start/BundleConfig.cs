@@ -22,11 +22,15 @@ namespace MVCBlog.Website
 
             bundles.Add(new StyleBundle("~/css/combined")
                 .Include(
-                    "~/Content/bootstrap.css",
+                    "~/Content/bootstrap.min.css",
+                    "~/Content/bootstrap-responsive.min.css",
+                    "~/Content/styles.css",
                     "~/Content/custom.css",
                     "~/Content/lightbox.css",
                     "~/Content/jquery.autocomplete.css",
-                    "~/Content/shCoreDefault.css"));
+                    "~/Content/shCoreDefault.css",
+                    "~/Content/font-awesome-ie7.css",
+                    "~/Content/font-awesome.css"));
         }
     }
 }

@@ -6,7 +6,7 @@
 @section ScriptContent {
     <script type="text/javascript" src="@Links.Scripts.tiny_mce.jquery_tinymce_js"></script>
     <script type="text/javascript" src="@Links.Scripts.tiny_mce.tiny_mce_js"></script>
-<script type="text/javascript" src="@Links.Scripts.jquery_autocomplete_pack_js"></script>
+    <script type="text/javascript" src="@Links.Scripts.jquery_autocomplete_pack_js"></script>
     <script type="text/javascript" src="@Links.Scripts.customEditBlogEntry_js"></script>
 
     <script type="text/javascript">
@@ -78,8 +78,7 @@
         <div>
             <div class="pull-right small">
                 <a class="addImage" href="javascript:void(0);">@Common.AddImage</a>
-                <a id="toggleShortContentEditor" href="javascript:void(0);">@Common.LoadEditor</a>
-            </div>
+           </div>
             <div class="form-group">
                 @Html.LabelFor(m => m.BlogEntry.ShortContent)
                 @Html.TextAreaFor(m => m.BlogEntry.ShortContent, new { rows = 8, @class = "form-control tinymce" })
@@ -88,7 +87,6 @@
         </div>
         <div class="pull-right small">
             <a class="addImage" href="javascript:void(0);">@Common.AddImage</a> 
-            <a id="toggleContentEditor" href="javascript:void(0);">@Common.LoadEditor</a>
         </div>
         <div class="form-group">
             @Html.LabelFor(m => m.BlogEntry.Content)
