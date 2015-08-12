@@ -2,6 +2,9 @@
     Layout = "~/Views/Shared/Site.Layout.cshtml";
 }
 
+@section HeaderTitle {
+    @RenderSection("HeaderTitle",false)
+}
 @section HeaderContent {
     @RenderSection("HeaderContent", false)
 }
@@ -15,7 +18,7 @@
 }
 
     
-    <div class="span4 vcard">
+    @*<div class="span4 vcard">
         <div class="vcard-wrap">
             <!-- begin .vcard-bio -->
             <div class="vcard-bio">
@@ -49,7 +52,7 @@
             
         </div>
         
-    </div>
+    </div>*@
 
     @RenderBody()
 

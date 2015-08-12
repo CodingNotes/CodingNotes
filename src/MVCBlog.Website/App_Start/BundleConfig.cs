@@ -10,27 +10,27 @@ namespace MVCBlog.Website
         {
             bundles.Add(new ScriptBundle("~/bundles/scripts")
                 .Include(
-                    "~/Scripts/jquery-{version}.js",
-                    "~/Scripts/jquery.validate*",
-                    "~/Scripts/bootstrap.js",
-                    "~/Scripts/jquery.lightbox.js",
-                    "~/Scripts/jquery.autocomplete.pack.js",
-                    "~/Scripts/SyntaxHighlighter/shCore.js",
-                    "~/Scripts/SyntaxHighlighter/shAutoloader.js",
-                    "~/Scripts/respond.js",
-                    "~/Scripts/custom.js"));
+                    "~/js/jquery-1.11.1.min.js",
+                    "~/js/jquery-migrate-1.2.1.min.js",
+                    "~/css/bootstrap/js/bootstrap.min.js",
+                    "~/js/css_browser_selector.js",
+                    "~/js/jquery.easing-1.3.js",
+                    "~/js/jquery.prettyPhoto.js",
+                    "~/js/jquery.validate.js",
+                    "~/js/jquery.address-1.5.min.js",
+                    "~/js/jquery.isotope.min.js",
+                    "~/js/jquery.circliful.min.js",
+                    "~/js/wow.min.js",
+                    "~/js/script.js"));
 
             bundles.Add(new StyleBundle("~/css/combined")
                 .Include(
-                    "~/Content/bootstrap.min.css",
-                    "~/Content/bootstrap-responsive.min.css",
-                    "~/Content/styles.css",
-                    "~/Content/custom.css",
-                    "~/Content/lightbox.css",
-                    "~/Content/jquery.autocomplete.css",
-                    "~/Content/shCoreDefault.css",
-                    "~/Content/font-awesome-ie7.css",
-                    "~/Content/font-awesome.css"));
+                    "~/css/prettyPhoto.css",
+                    "~/css/animate.css",
+                    "~/css/font-awesome/css/font-awesome.min.css",
+                    "~/css/stylesheet.css"
+                    ));
+            
         }
     }
 }

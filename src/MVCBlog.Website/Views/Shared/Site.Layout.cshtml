@@ -1,61 +1,78 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Papyrus - Responsive Resume Template</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Amin Diary - Aka: LeAmino">
+    <meta name="keywords" content="Responsive, Template">
+    <meta name="robots" content="all">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,800,400,600' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @Styles.Render("~/css/combined")
     @RenderSection("HeaderContent", false)
-    <title>@Html.MvcSiteMap().SiteMapTitle() - www.YourDomain.de</title>
-    <meta name="robots" content="index, follow" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="@this.Request.Url.Scheme://@this.Request.Url.Authority@Url.Content("~/")" />
-    <link rel="SHORTCUT ICON" href="@Url.Content("~/favicon.ico")" type="image/x-icon" />
-    <link rel="pingback" href="@this.Request.Url.GetLeftPart(UriPartial.Authority)@Url.Content("~/")@ConfigurationManager.AppSettings["PingbackHandler"]" />
-    <link rel="alternate" type="application/rss+xml" title="@ConfigurationManager.AppSettings["BlogDescription"]" href="@this.Request.Url.GetLeftPart(UriPartial.Authority)@Url.Action(MVC.Blog.Feed())" />
 
-    <!-- Integrated Adobe Edge Fonts starts here -->
-    <script src="http://use.edgefonts.net/squada-one:n4.js"></script>
-    <script src="http://use.edgefonts.net/bebas-neue:n4.js"></script>
-    <!-- Integrated Adobe Edge Fonts ends here -->
 </head>
-<body>
-    @*<div class="navbar navbar-inverse navbar-fixed-top hidden-print" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="@Url.RouteUrl(MVCBlog.Website.Routes.DEFAULT, new { action = MVC.Blog.ActionNames.Index, controller = MVC.Blog.Name })">MVC Blog</a>
-                </div>
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.RouteLink(@Common.Blog, MVCBlog.Website.Routes.DEFAULT, new { action = MVC.Blog.ActionNames.Index, controller = MVC.Blog.Name })</li>
-                        <li>@Html.ActionLink(@Common.About, MVC.About.Index())</li>
-                        <li><a href="@this.Request.Url.GetLeftPart(UriPartial.Authority)@Url.Action(MVC.Blog.Feed())" class="rss" title="@Common.RssFeed"></a></li>
-                    </ul>
 
-                    <form method="get" class="navbar-form navbar-right" action="@Url.RouteUrl(MVCBlog.Website.Routes.DEFAULT, new { action = MVC.Blog.ActionNames.Index, controller = MVC.Blog.Name })">
-                        <div class="form-group">
-                            @Html.TextBox("search", null, new { placeholder = Common.Search, @class = "form-control" })
-                        </div>
-                    </form>
+<body>
+
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+        <noscript>JavaScript is off. Please enable to view full site.</noscript>
+    </div>
+
+    <div class="wrapper">
+        <div class="container">
+            @RenderSection("HeroUnit", false)
+            <header id="home">
+
+                @RenderSection("HeaderTitle", false)
+                
+                <div class="nav-menu top-menu-holder">
+                    <nav class="hidden-xs visible-lg ">
+                        <ul class="nav">
+                            <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Blog" ? "active" : "")">
+                                @Html.RouteLink("blog", MVCBlog.Website.Routes.DEFAULT, new { action = MVC.Blog.ActionNames.Index, controller = MVC.Blog.Name })
+                            </li>
+                            <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Rovian" ? "active" : "")">
+                                <a href="@Url.Action("Index", "Rovian")">rovian</a>
+                            </li>
+                            <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Murilo" ? "active" : "")">
+                                @Html.ActionLink("murilo", "Index", "Murilo")
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                    <select class="top-drop-menu nav visible-md visible-sm visible-xs hidden-lg">
+                        <option value="#home" selected="selected">
+                            Home
+                        </option>
+                        <option value="#profile">
+                            Rovian
+                        </option>
+                        <option value="#education">
+                            Murilo
+                        </option>
+                    </select>
                 </div>
-            </div>
-        </div>*@
-    <div class="container">
-        @RenderSection("HeroUnit", false)
-        <div class="row page-wrap">
-            <div class="span12 headerLink">
-                <a href="@Url.RouteUrl(MVCBlog.Website.Routes.DEFAULT, new { action = MVC.Blog.ActionNames.Index, controller = MVC.Blog.Name })"><h4 class="intro-slogan css3-gradient"><img src="~/images/CN-Large.png" height="170" width="170" />Coding Notes</h4></a>
-            </div>
+
+            </header>
             @RenderBody()
         </div>
+
     </div>
+
+    <a class="goto-top" href="#gotop"></a>
+
     @Scripts.Render("~/bundles/scripts")
     @RenderSection("ScriptContent", false)
 </body>
+
+
 </html>
+

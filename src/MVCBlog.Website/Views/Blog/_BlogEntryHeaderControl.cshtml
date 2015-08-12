@@ -1,25 +1,31 @@
 @model MVCBlog.Core.Entities.BlogEntry
 
-<div class="blog-item-meta">
-    <span>
-        <i class="icon-calendar"></i><small>@this.Model.PublishDate.ToString("dd/MM/yyyy")</small>
-    </span>
-    <span>
-        <i class="icon-comments"></i><small><a href="@Url.Action(this.Model.Url)#comments">@this.Model.BlogEntryComments.Count comments</a></small>
-    </span>
-    @if (this.Model.Author != null)
-    {
-        <span>
-            <i class="icon-user"></i><small><text>@this.Model.Author</text></small>
-        </span>
-    }
-    @if (this.Request.IsAuthenticated)
-    {
-        <span>
-            <i class="icon-edit"></i><small><a href="@Url.Action(MVC.Administration.EditBlogEntry(this.Model.Id))" title="@Common.Edit">@Common.Edit</a></small>
-</span>
-        <span>
-            <i class="icon-remove-circle"></i><small><a href="@Url.Action(MVC.Blog.Delete(this.Model.Id))" class="adminlink deleteicon" title="@Common.Delete" onclick="if (!confirm('@Common.DeleteConfirmation')) { return false;}">@Common.Delete</a></small>
-</span>
-    }
-</div>
+
+    <ul class="header-control list-inline">
+        <li>
+            <div class="info-item">
+                <i class="fa fa-calendar"></i>&nbsp;@this.Model.PublishDate.ToString("dd/MM/yyyy")
+            </div>
+        </li>
+        @if (this.Model.Author != null)
+        {
+            <li>
+                <div class="info-item">
+                    <i class="fa fa-user"></i>&nbsp;<text>@this.Model.Author</text>
+                </div>
+            </li>
+        }
+        @if (this.Request.IsAuthenticated)
+        {
+            <li>
+                <div class="info-item">
+                    <i class="fa fa-edit"></i>&nbsp;<a href="@Url.Action(MVC.Administration.EditBlogEntry(this.Model.Id))" title="@Common.Edit">@Common.Edit</a>
+                </div>
+            </li>
+            <li>
+                <div class="info-item">
+                    <i class="fa fa-times-circle-o"></i>&nbsp;<a href="@Url.Action(MVC.Blog.Delete(this.Model.Id))" class="adminlink deleteicon" title="@Common.Delete" onclick="if (!confirm('@Common.DeleteConfirmation')) { return false;}">@Common.Delete</a>
+                </div>
+            </li>
+        }
+    </ul>

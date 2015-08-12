@@ -1,9 +1,20 @@
 ﻿@model MVCBlog.Website.Models.OutputModels.Blog.IndexModel
 
-@{
-    Layout = "~/Views/Shared/Sidebar.Layout.cshtml";
-}
+@section HeaderTitle {
+    <div class="head-image bg-image" data-bg-image="images/head-image.jpg">
+        <div class="avatar wow bounceInDown">
+            <img alt="avatar" src="images/avatar.jpg" />
+        </div>
+    </div>
 
+    <div class="big-name">
+        <div class="sticky-paper-head has-shadow ">
+            <div class="content">
+                <h1>Coding Notes</h1>
+            </div>
+        </div>
+    </div>
+}
 @section HeaderContent {
     <link rel="canonical" href="@this.Request.Url.GetLeftPart(UriPartial.Authority)@Url.Content("~/")" />
 }
@@ -14,7 +25,7 @@
         @if (!string.IsNullOrEmpty(this.Model.Tag))
         {
             <i class="icon-tag"></i>
-            @Common.Tag<text>: @this.Model.Tag</text> 
+            @Common.Tag<text>: @this.Model.Tag</text>
         }
         else if (!string.IsNullOrEmpty(this.Model.Search))
         {
@@ -23,31 +34,119 @@
         }
     </div>
 }
-<div class="span8 main-wrap">
-    <!-- begin .section-blog -->
-    <div class="section section-blog section-last row">
-        <h3 class="css3-gradient-2"><i class="icon-paper-clip"></i>Latest from the blog</h3>
-        @if (!this.Model.Entries.Any())
-        {
-            @Common.NoData
-        }
-        else
-        {
-            foreach (var entry in this.Model.Entries)
-            {
-            <!-- begin .blog-item -->
-                <div class="section-blog-item row-fluid">
-                    <div class="blog-item-excerpt">
-                        <h4><a href="#" title="title goes here">@Html.ActionLink(entry.Header, entry.Url)</a></h4>
-                        @{Html.RenderPartial(MVC.Blog.Views._BlogEntryHeaderControl, entry);}
-                        @Html.Raw(entry.ShortContent);
-                        <p>@Html.ActionLink(Common.Continue, entry.Url)</p>
+<div class="row">
+
+
+
+    <section id="blog" class="big-name">
+        <div class="row">
+
+            <div class="col-lg-8">
+                <div class="sticky-paper-head has-shadow ">
+                    <div class="content">
+                        <h1>Last Posts</h1>
                     </div>
                 </div>
-            <!-- end .blog-item -->
-            }
-            Html.RenderPartial(MVC.Blog.Views._PagingControl, this.Model);
-        }
 
-    </div>
-    <!-- end .section-blog -->
+                <div class="sticky-paper-body has-shadow ">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="blog-list-holder row">
+                                    @if (!this.Model.Entries.Any())
+                                    {
+                                        @Common.NoData
+                                    }
+                                    else
+                                    {
+                                        foreach (var entry in this.Model.Entries)
+                                        {
+                                            <div class="blog-item item col-xs-12 col-md-12 col-lg-12">
+                                                <div class="sticky-paper-head has-shadow ">
+                                                    <div class="content">
+                                                        <h1>@Html.ActionLink(entry.Header, entry.Url)</h1>
+                                                    </div>
+                                                </div>
+                                                <div class="info-area" style="padding-top:150px">
+                                                    @{Html.RenderPartial(MVC.Blog.Views._BlogEntryHeaderControl, entry);}
+                                                    <div class="excerpt">
+                                                        <p>
+                                                            @Html.Raw(entry.ShortContent);
+                                                        </p>
+                                                    </div>
+
+                                                    @Html.ActionLink(Common.Continue, entry.Url, "Blog", new { @class = "le-btn" })
+                                                </div>
+                                            </div>
+                                        }
+                                        Html.RenderPartial(MVC.Blog.Views._PagingControl, this.Model);
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 ">
+                <section>
+                    <div class="sticky-paper-head has-shadow">
+                        <div class="content">
+                            <h1>Tags</h1>
+                        </div>
+                    </div>
+
+                    <div class="sticky-paper-body has-shadow no-min-height">
+                        <div class="content">
+                            @{Html.RenderAction(MVC.Blog.Tags());}
+                        </div>
+                    </div>
+                </section>
+                <hr />
+                <section>
+                    <div class="sticky-paper-head has-shadow ">
+                        <div class="content">
+                            <h1>Popular Posts</h1>
+                        </div>
+                    </div>
+
+                    <div class="sticky-paper-body has-shadow no-min-height">
+                        <div class="content">
+                            @{Html.RenderAction(MVC.Blog.PopularBlogEntries());}
+                        </div>
+                    </div>
+                </section>
+                <hr />
+                <section>
+                    <div class="sticky-paper-head has-shadow ">
+                        <div class="content">
+                            <h1>Rovian</h1>
+                        </div>
+                    </div>
+
+                    <div class="sticky-paper-body has-shadow no-min-height">
+                        <div class="content">
+                            
+                        </div>
+                    </div>
+                </section>
+                <hr />
+                <section>
+                    <div class="sticky-paper-head has-shadow ">
+                        <div class="content">
+                            <h1>Murilo</h1>
+                        </div>
+                    </div>
+
+                    <div class="sticky-paper-body has-shadow no-min-height">
+                        <div class="content">
+
+                        </div>
+                    </div>
+                </section>             
+                           
+            </div>
+        </div>
+    </section>
+</div>
+<!-- end .section-blog -->
