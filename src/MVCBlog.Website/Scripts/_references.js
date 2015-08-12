@@ -1,4 +1,5 @@
 ﻿/// <autosync enabled="true" />
+/// <reference path="../css/bootstrap/js/bootstrap.js" />
 /// <reference path="../js/css_browser_selector.js" />
 /// <reference path="../js/jquery.address-1.5.min.js" />
 /// <reference path="../js/jquery.circliful.min.js" />

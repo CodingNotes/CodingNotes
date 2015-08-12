@@ -259,7 +259,17 @@
     <Content Include="Content\shCoreDefault.css" />
     <Content Include="Content\styles.css" />
     <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap\css\bootstrap.css" />
+    <Content Include="css\bootstrap\css\bootstrap.min.css" />
+    <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\bootstrap\js\bootstrap.js" />
+    <Content Include="css\bootstrap\js\bootstrap.min.js" />
     <Content Include="css\elements.css" />
+    <Content Include="css\font-awesome\css\font-awesome.css" />
+    <Content Include="css\font-awesome\css\font-awesome.min.css" />
+    <Content Include="css\font-awesome\font\fontawesome-webfont.svg" />
     <Content Include="css\prettyPhoto.css" />
     <Content Include="css\stylesheet.css" />
     <Content Include="favicon.ico" />
@@ -325,6 +335,15 @@
     <Content Include="fonts\fontawesome-webfont_2d2816fe.eot" />
     <Content Include="css\elements.less" />
     <Content Include="css\stylesheet.less" />
+    <Content Include="css\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="css\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="css\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="css\font-awesome\font\FontAwesome.otf" />
+    <Content Include="css\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap\css\bootstrap.css.map" />
+    <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -636,8 +655,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="blogcontent\blogfiles\" />
-    <Folder Include="css\bootstrap\" />
-    <Folder Include="css\font-awesome\" />
     <Folder Include="css\images\" />
     <Folder Include="css\less\" />
     <Folder Include="images\blog\" />
