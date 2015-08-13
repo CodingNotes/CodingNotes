@@ -284,6 +284,7 @@
     <Content Include="images\CN-Large.png" />
     <Content Include="images\head-image.jpg" />
     <Content Include="images\loader.gif" />
+    <Content Include="images\logo.png" />
     <Content Include="images\noise.png" />
     <Content Include="images\page-loader.GIF" />
     <Content Include="images\rovian.png" />
@@ -335,15 +336,19 @@
     <Content Include="fonts\fontawesome-webfont_2d2816fe.eot" />
     <Content Include="css\elements.less" />
     <Content Include="css\stylesheet.less" />
-    <Content Include="css\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="css\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="css\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="css\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="css\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="css\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="css\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="css\font-awesome\font\FontAwesome.otf" />
     <Content Include="css\bootstrap\css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap\css\bootstrap.css.map" />
     <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="css\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="css\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="css\font-awesome\font\FontAwesome.otf" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -656,6 +661,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="blogcontent\blogfiles\" />
+    <Folder Include="css\font-awesome\fonts\" />
     <Folder Include="css\images\" />
     <Folder Include="css\less\" />
     <Folder Include="images\blog\" />
