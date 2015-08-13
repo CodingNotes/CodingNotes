@@ -62,12 +62,12 @@
                                         foreach (var entry in this.Model.Entries)
                                         {
                                             <div class="blog-item item col-xs-12 col-md-12 col-lg-12">
-                                                <div class="sticky-paper-head has-shadow ">
+                                                <div class="sticky-paper-head has-shadow blog-title">
                                                     <div class="content">
                                                         <h1>@Html.ActionLink(entry.Header, entry.Url)</h1>
                                                     </div>
                                                 </div>
-                                                <div class="info-area" style="padding-top:150px">
+                                                <div class="info-area blog-post">
                                                     @{Html.RenderPartial(MVC.Blog.Views._BlogEntryHeaderControl, entry);}
                                                     <div class="excerpt">
                                                         <p>
