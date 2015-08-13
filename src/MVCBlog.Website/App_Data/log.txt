@@ -118,3 +118,6 @@ System.Data.Entity.Validation.DbEntityValidationException: Validation failed for
    at MVCBlog.Core.Database.DatabaseContext.<>n__0()
    at MVCBlog.Core.Database.DatabaseContext.<SaveChangesAsync>d__30.MoveNext() in C:\Users\rovia\Documents\GitHubVisualStudio\MVCBlog\src\MVCBlog.Core\Database\DatabaseContext.cs:line 85
 2015-08-11 15:32:34,360 [69] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.AddBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command AddBlogEntryCommand
+2015-08-12 16:01:59,481 [28] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-13 10:40:28,793 [67] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand
+2015-08-13 10:40:39,427 [66] INFO  MVCBlog.Core.Commands.CommandLoggingDecorator`1[[MVCBlog.Core.Commands.UpdateBlogEntryCommand, MVCBlog.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] [(null)] - Executing command UpdateBlogEntryCommand

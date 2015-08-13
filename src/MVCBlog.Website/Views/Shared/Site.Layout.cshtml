@@ -5,10 +5,10 @@
 
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <title>Papyrus - Responsive Resume Template</title>
+    <title>@Html.MvcSiteMap().SiteMapTitle() - www.codingnotes.co.nz</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="author" content="Amin Diary - Aka: LeAmino">
-    <meta name="keywords" content="Responsive, Template">
+    <meta name="author" content="Rovian Voelz Veronez">
+    <meta name="keywords" content="coding, rovian, rovian voelz veronez, rovianvz">
     <meta name="robots" content="all">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,800,400,600' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,9 @@
 </head>
 
 <body>
+    @Html.Hidden("RedirectToBlog", Url.Action("Index", "Blog"));
+    @Html.Hidden("RedirectToRovian", Url.Action("Index", "Rovian"));
+    @Html.Hidden("RedirectToMurilo", Url.Action("Index", "Murilo"));
 
     <div id="preloader">
         <div id="status">&nbsp;</div>
@@ -49,13 +52,13 @@
                     </nav>
 
                     <select class="top-drop-menu nav visible-md visible-sm visible-xs hidden-lg">
-                        <option value="#home" selected="selected">
+                        <option value="b" selected="selected">
                             Home
                         </option>
-                        <option value="#profile">
+                        <option value="r">
                             Rovian
                         </option>
-                        <option value="#education">
+                        <option value="m">
                             Murilo
                         </option>
                     </select>

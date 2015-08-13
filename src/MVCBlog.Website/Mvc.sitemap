@@ -5,6 +5,8 @@
 
   <mvcSiteMapNode title="$resources:SiteMapLocalizations,Blog_Index" controller="Blog" action="Index" preservedRouteParameters="tag,page">
     <mvcSiteMapNode title="$resources:SiteMapLocalizations,Blog_Entry" action="Entry" preservedRouteParameters="year,month,day,id" />
+    <mvcSiteMapNode title="$resources:SiteMapLocalizations,Rovian_Index" controller="Rovian" action="Index"/>
+    <mvcSiteMapNode title="$resources:SiteMapLocalizations,Murilo_Index" controller="Murilo" action="Index"/>
     <mvcSiteMapNode title="$resources:SiteMapLocalizations,Login_Index" controller="Login" action="Index"/>
     <mvcSiteMapNode title="$resources:SiteMapLocalizations,Login_Logout" controller="Login" action="Logout"/>
     <mvcSiteMapNode title="$resources:SiteMapLocalizations,About_Index" controller="About" action="Index"/>

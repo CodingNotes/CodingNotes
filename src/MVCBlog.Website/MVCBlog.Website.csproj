@@ -269,7 +269,7 @@
     <Content Include="css\elements.css" />
     <Content Include="css\font-awesome\css\font-awesome.css" />
     <Content Include="css\font-awesome\css\font-awesome.min.css" />
-    <Content Include="css\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="css\prettyPhoto.css" />
     <Content Include="css\stylesheet.css" />
     <Content Include="favicon.ico" />
@@ -284,7 +284,6 @@
     <Content Include="images\CN-Large.png" />
     <Content Include="images\head-image.jpg" />
     <Content Include="images\loader.gif" />
-    <Content Include="images\logo.png" />
     <Content Include="images\noise.png" />
     <Content Include="images\page-loader.GIF" />
     <Content Include="images\rovian.png" />
@@ -336,15 +335,15 @@
     <Content Include="fonts\fontawesome-webfont_2d2816fe.eot" />
     <Content Include="css\elements.less" />
     <Content Include="css\stylesheet.less" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\font-awesome\fonts\FontAwesome.otf" />
     <Content Include="css\bootstrap\css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap\css\bootstrap.css.map" />
     <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="css\bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="css\font-awesome\font\fontawesome-webfont.eot" />
-    <Content Include="css\font-awesome\font\fontawesome-webfont.ttf" />
-    <Content Include="css\font-awesome\font\fontawesome-webfont.woff" />
-    <Content Include="css\font-awesome\font\FontAwesome.otf" />
     <None Include="MvcSiteMapSchema.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -651,12 +650,12 @@
     <Content Include="App_GlobalResources\SiteMapLocalizations.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>SiteMapLocalizations.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </Content>
     <EmbeddedResource Include="Properties\Common.resx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="blogcontent\blogfiles\" />
-    <Folder Include="css\font-awesome\fonts\" />
     <Folder Include="css\images\" />
     <Folder Include="css\less\" />
     <Folder Include="images\blog\" />
