@@ -1,7 +1,7 @@
 ﻿
 @section HeaderTitle {
 
-    <div class="head-image bg-image" data-bg-image="images/head-image.jpg">
+    <div class="head-image bg-image" data-bg-image="@Url.Content("~/images/head-image.jpg")">
         <div class="avatar wow bounceInDown">
             <img alt="avatar" src="images/rovian.png" />
         </div>
@@ -58,7 +58,7 @@
                             </li>
                             <li>
                                 <div class="info-item">
-                                    <i class="fa fa-envelope"></i>
+                                    <i class="fa fa-linkedin"></i>
                                     <span><a href="https://nz.linkedin.com/in/rovianvz" target="_blank">nz.linkedin.com/in/rovianvz</a></span>
                                 </div>
                             </li>
@@ -300,7 +300,7 @@
                             </div>
                         </div>
                         <div class="timeline-body">
-                            <div class="event-item timeline-item">
+                            @*<div class="event-item timeline-item">
                                 <div class="event-content timeline-content left">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -312,7 +312,7 @@
                                     <h1>software developer intern</h1>
                                     <h4>Central Station Software <small>Aug 2015 - Present</small></h4>
                                 </div>
-                            </div>
+                            </div>*@
                             <div class="event-item timeline-item">
                                 <div class="event-item timeline-item">
                                     <div class="event-title left">
@@ -321,18 +321,27 @@
                                     </div>
                                     <div class="event-content timeline-content right">
                                         <p>
-                                            Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>.
-                                            Vivamus laoreet dolor metus, eu ullamcorper turpis ornare tincidunt.
-                                            Vivamus tristique rhoncus enim. Curabitur varius est quis sollicitudin volutpat.
+                                            <ul class="fa-ul">
+                                                <li><i class="fa-li fa fa-caret-right"></i>Development and design of an e-commerce large scale application.                                                                                    </li>
+                                                <li><i class="fa-li fa fa-caret-right"></i>Development and maintenance of an application which included an Intranet web application and mobile apps to Android and Windows Mobile.             </li>
+                                                <li><i class="fa-li fa fa-caret-right"></i>Development of a website with real-time updates with locations and status of field teams.                                                           </li>
+                                                <li><i class="fa-li fa fa-caret-right"></i>Monitor and train new staff.                                                                                                                        </li>
+                                                <li><i class="fa-li fa fa-caret-right"></i>Contact with clients to update with development’s progress.                                                                                         </li>
+                                                <li><i class="fa-li fa fa-caret-right"></i>Underlying technologies: .NET Framework, C# .NET, ASP.NET, Android, JavaScript, Ajax, JSON, HTML, CSS, SQLServer, Microsoft Team Explorer.     </li>                                                                                                                                              </li>
+                                            </ul>
+                                            
+
                                         </p>
                                     </div>
                                 </div>
                                 <div class="event-item timeline-item">
                                     <div class="event-content timeline-content left">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Vivamus laoreet dolor metus, eu ullamcorper turpis ornare tincidunt.
-                                            Vivamus tristique rhoncus enim. Curabitur varius est quis sollicitudin volutpat.
+                                            <ul class="fa-ul">
+                                                <li><i class="fa-li fa fa-caret-right"></i>Maintenance of websites using PHP, MySQL, CSS, Ajax, JavaScript, JQuery and HTML </li>
+                                                <li><i class="fa-li fa fa-caret-right"></i>Development of an desktop application to the administrative team                 </li>
+
+                                            </ul>
                                         </p>
                                     </div>
                                     <div class="event-title right">
@@ -429,14 +438,12 @@
                             <div class="skill-holder timeline-item">
 
                                 <div class="skill-item left">
-                                    <div class="skill" data-text="Linux" data-info="Lorem ipsum dolor sit amet" data-percent="0" data-fill="#272425"></div>
+                                    <div class="skill" data-text=".NET Framework" data-percent="100"  data-fill="#272425" data-fontsize="17"></div>
                                 </div>
 
                                 <div class="event-content timeline-content right">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Vivamus laoreet dolor metus, eu ullamcorper turpis ornare tincidunt.
-                                        Vivamus tristique <strong>rhoncus enim</strong>. Curabitur varius est quis sollicitudin volutpat.
+                                        Two years of experience working with C# and ASP.NET. Experience includes working with MVC, Web Forms, Web Services and Microsoft applications such as Visual Studio and Team Foundation Server.
 
                                     </p>
                                 </div>
@@ -450,32 +457,25 @@
 
                                 <div class="event-content timeline-content left">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Vivamus laoreet dolor metus, eu ullamcorper turpis ornare tincidunt.
-                                        <strong>Vivamus</strong> tristique rhoncus enim. Curabitur varius est quis sollicitudin volutpat.
-
+                                        Solid SQL knowledge, with experience in many DBMS such as SQL Server, SqlCE, MySQL, PostgreSQL, Oracle and SQLite.
                                     </p>
                                 </div>
 
                                 <div class="skill-item right">
-                                    <div class="skill" data-text="85%" data-info="HTML" data-percent="85" data-fill="#272425"></div>
+                                    <div class="skill" data-text="SQL Databases" data-percent="100" data-fontsize="18" data-fill="#272425"></div>
                                 </div>
-
                             </div>
 
 
                             <div class="skill-holder timeline-item">
 
                                 <div class="skill-item left">
-                                    <div class="skill" data-text="75%" data-info="CSS" data-percent="75" data-fill="#272425"></div>
+                                    <div class="skill" data-text="Mobile development" data-percent="100" data-fontsize="15" data-fill="#272425"></div>
                                 </div>
 
                                 <div class="event-content timeline-content right">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Vivamus laoreet <strong>dolor metus</strong>, eu ullamcorper turpis ornare tincidunt.
-                                        Vivamus tristique rhoncus enim. Curabitur varius est quis sollicitudin volutpat.
-
+                                        Experienced with mobile development with technologies such as Windows Mobile and Android.
                                     </p>
                                 </div>
 
@@ -486,15 +486,42 @@
 
                                 <div class="event-content timeline-content left">
                                     <p>
-                                        Lorem <strong>ipsum dolor</strong> sit amet, consectetur adipiscing elit.
-                                        Vivamus laoreet dolor metus, eu ullamcorper turpis ornare tincidunt.
-                                        Vivamus tristique rhoncus enim. Curabitur varius est quis sollicitudin volutpat.
-
+                                        Highly experienced with web technologies such as HTML, CSS, JavaScript, jQuery and JSON.
                                     </p>
                                 </div>
 
                                 <div class="skill-item right">
-                                    <div class="skill" data-text="65%" data-info="jQuery" data-percent="65" data-fill="#272425"></div>
+                                    <div class="skill" data-text="Web development" data-fontsize="15" data-percent="100" data-fill="#272425"></div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="skill-holder timeline-item">
+
+                                <div class="skill-item left">
+                                    <div class="skill" data-text="Comm skills" data-fontsize="17" data-percent="100" data-fill="#272425"></div>
+                                </div>
+
+                                <div class="event-content timeline-content right">
+                                    <p>
+                                        Able to listen and understand the instructions given as well as express clearly any thoughts to the supervisor or co-workers. Also have demonstrated ability to speak directly to clients.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="skill-holder timeline-item">
+
+
+                                <div class="event-content timeline-content left">
+                                    <p>
+                                        Having a strong academic background, I’m able to quickly find the resources I need to learn new skills/technologies and apply them to any task.
+                                    </p>
+                                </div>
+
+                                <div class="skill-item right">
+                                    <div class="skill" data-text="Self- learner" data-fontsize="18"  data-percent="100" data-fill="#272425"></div>
                                 </div>
 
 

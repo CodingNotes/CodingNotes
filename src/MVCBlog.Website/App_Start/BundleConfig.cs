@@ -8,6 +8,7 @@ namespace MVCBlog.Website
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+
             bundles.Add(new ScriptBundle("~/bundles/scripts")
                 .Include(
                     "~/js/jquery-1.11.1.min.js",
@@ -27,7 +28,6 @@ namespace MVCBlog.Website
                 .Include(
                     "~/css/prettyPhoto.css",
                     "~/css/animate.css",
-                    "~/css/font-awesome/css/font-awesome.min.css",
                     "~/css/stylesheet.css"
                     ));
             
