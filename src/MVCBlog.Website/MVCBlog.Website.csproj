@@ -275,6 +275,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\avatar.jpg" />
     <Content Include="images\bg-patterns\8.png" />
+    <Content Include="images\bg.png" />
     <Content Include="images\Blog-img.jpg" />
     <Content Include="images\clip.png" />
     <Content Include="images\CN-Large.png" />
