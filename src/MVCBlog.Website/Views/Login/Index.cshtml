@@ -1,24 +1,52 @@
 ﻿@model MVCBlog.Website.Models.InputModels.Login.LoginFormInput
+@section HeaderTitle {
+    <div class="head-image bg-image" data-bg-image="@Url.Content("~/images/head-image.jpg")">
+        <div class="avatar wow bounceInDown">
+            <img alt="avatar" src="~/images/rovian.png" />
+        </div>
+    </div>
 
-@using (Html.BeginForm())
-{
-    <div class="form-group">
-        @Html.LabelFor(m => m.Username)
-        @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Password)
-        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        <label class="checkbox">
-            @Html.CheckBoxFor(m => m.RememberMe)
-            @Html.DisplayNameFor(m => m.RememberMe)
-        </label>
-    </div>
-    <div class="form-group">
-        @Html.AntiForgeryToken()
-        <input type="submit" value="@Common.Login" class="btn btn-primary"/>
-        @Html.ValidationMessage("login")
+    <div class="big-name">
+        <div class="sticky-paper-head has-shadow ">
+            <div class="content">
+                <h1>Coding Notes</h1>
+            </div>
+        </div>
     </div>
 }
+<section id="info">
+    <div class="sticky-paper-head has-shadow ">
+        <div class="content">
+            <h1>Login</h1>
+            
+        </div>
+    </div>
+    <div class="sticky-paper-body has-shadow ">
+        <div class="content">
+            <div class="row">
+                <div class="col-md-4 col-md-push-4">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Username)
+                            @Html.TextBoxFor(m => m.Username, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Password)
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            @Html.DisplayNameFor(m => m.RememberMe)
+                        </div>
+                        <div class="form-group">
+                            @Html.AntiForgeryToken()
+                            <input type="submit" value="@Common.Login" class="le-btn" />
+                            @Html.ValidationMessage("login")
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -122,7 +122,8 @@ namespace MVCBlog.Website.Controllers
                     .AsNoTracking()
                 .SingleAsync(b => b.Id == id.Value) : new BlogEntry()
                 {
-                    PublishDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, 0, 0)
+                    PublishDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, 0, 0),
+                    Visible = true
                 };
 
             var model = new EditBlogEntry()

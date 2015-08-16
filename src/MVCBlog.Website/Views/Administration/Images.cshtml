@@ -1,5 +1,19 @@
 @model IEnumerable<MVCBlog.Core.Entities.Image>
+@section HeaderTitle {
+    <div class="head-image bg-image" data-bg-image="@Url.Content("~/images/head-image.jpg")">
+        <div class="avatar wow bounceInDown">
+            <img alt="avatar" src="~/images/rovian.png" />
+        </div>
+    </div>
 
+    <div class="big-name">
+        <div class="sticky-paper-head has-shadow ">
+            <div class="content">
+                <h1>Coding Notes</h1>
+            </div>
+        </div>
+    </div>
+}
 <form action="@Url.Action(MVC.Administration.ImageUpload())" method="post" enctype="multipart/form-data">
     <h2>@Common.Upload</h2>
     <div class="form-group">

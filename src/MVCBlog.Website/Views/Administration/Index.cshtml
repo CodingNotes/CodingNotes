@@ -1,11 +1,40 @@
-<div class="row">
-    <div class="col-md-2">
-        <a href="@Url.Action(MVC.Administration.EditBlogEntry())" title="@Common.NewBlogEntry"><img src="@Links.gx.edit_png" alt="@Common.NewBlogEntry" /><br />@Common.NewBlogEntry</a>
+@section HeaderTitle {
+    <div class="head-image bg-image" data-bg-image="@Url.Content("~/images/head-image.jpg")">
+        <div class="avatar wow bounceInDown">
+            <img alt="avatar" src="~/images/rovian.png" />
+        </div>
     </div>
-    <div class="col-md-2">
-        <a href="@Url.Action(MVC.Administration.Statistics())" title="@Common.Statistics"><img src="@Links.gx.chart_png" alt="@Common.Statistics" /><br />@Common.Statistics</a>
+
+    <div class="big-name">
+        <div class="sticky-paper-head has-shadow ">
+            <div class="content">
+                <h1>Coding Notes</h1>
+            </div>
+        </div>
     </div>
-    <div class="scol-md-2">
-        <a href="@Url.Action(MVC.Administration.Images())" title="@Common.ImagesManagement"><img src="@Links.gx.image_png" alt="@Common.ImagesManagement" /><br />@Common.ImagesManagement</a>
+}
+<section id="info">
+    <div class="sticky-paper-head has-shadow ">
+        <div class="content">
+            <h1>Administration</h1>
+        </div>
     </div>
-</div>
+    <div class="sticky-paper-body has-shadow ">
+        <div class="content">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="@Url.Action(MVC.Administration.EditBlogEntry())" title="@Common.NewBlogEntry"><img src="@Links.gx.edit_png" alt="@Common.NewBlogEntry" /><br />@Common.NewBlogEntry</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="@Url.Action(MVC.Administration.Statistics())" title="@Common.Statistics"><img src="@Links.gx.chart_png" alt="@Common.Statistics" /><br />@Common.Statistics</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="@Url.Action(MVC.Administration.Images())" title="@Common.ImagesManagement"><img src="@Links.gx.image_png" alt="@Common.ImagesManagement" /><br />@Common.ImagesManagement</a>
+                </div>
+                <div class="col-md-2">
+                    @Html.ActionLink(@Common.Logout, MVC.Login.Logout())
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

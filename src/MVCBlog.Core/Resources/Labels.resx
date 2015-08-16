@@ -142,7 +142,7 @@
     <value>Publish date</value>
   </data>
   <data name="ShortContentLabel" xml:space="preserve">
-    <value>Short content (shown on startpage)</value>
+    <value>Short content (shown on startpage only)</value>
   </data>
   <data name="VisibleLabel" xml:space="preserve">
     <value>Publically visible</value>
