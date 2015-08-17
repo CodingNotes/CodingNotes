@@ -19,21 +19,6 @@
     <link rel="canonical" href="@this.Request.Url.GetLeftPart(UriPartial.Authority)@Url.Content("~/")" />
 }
 
-@if (!string.IsNullOrEmpty(this.Model.Tag) || !string.IsNullOrEmpty(this.Model.Search))
-{
-    <div class="well">
-        @if (!string.IsNullOrEmpty(this.Model.Tag))
-        {
-            <i class="icon-tag"></i>
-            @Common.Tag<text>: @this.Model.Tag</text>
-        }
-        else if (!string.IsNullOrEmpty(this.Model.Search))
-        {
-            <i class="glyphicon glyphicon-search"></i>
-            @Common.Search<text>: @this.Model.Search</text>
-        }
-    </div>
-}
 <div class="row">
 
 
@@ -44,8 +29,28 @@
             <div class="col-lg-8">
                 <div class="sticky-paper-head has-shadow ">
                     <div class="content">
-                        <h1>Last Posts</h1>
-                    </div>
+                        <h1>
+                            @if (!string.IsNullOrEmpty(this.Model.Tag) || !string.IsNullOrEmpty(this.Model.Search))
+                            {
+
+                                if (!string.IsNullOrEmpty(this.Model.Tag))
+                                {
+                                    <i class="fa fa-tag"></i>
+                                        @Common.Tag<text>: @this.Model.Tag</text>
+                                }
+                                else if (!string.IsNullOrEmpty(this.Model.Search))
+                                {
+                                    <i class="fa fa-search"></i>
+                                        @Common.Search<text>: @this.Model.Search</text>
+                                }
+
+                            }
+                            else
+                            {
+                                <text>Last Posts</text>
+                            }
+                        </h1>
+</div>
                 </div>
 
                 <div class="sticky-paper-body has-shadow ">
@@ -92,6 +97,25 @@
             <!--SIDE BAR-->
             <div class="col-lg-4 ">
                 <section>
+                    <div class="sticky-paper-head has-shadow ">
+                        <div class="content">
+                            <h1>Search</h1>
+                        </div>
+                    </div>
+
+                    <div class="sticky-paper-body has-shadow no-min-height">
+                        <div class="content">
+                            <form method="get" class="navbar-form" action="@Url.RouteUrl(MVCBlog.Website.Routes.DEFAULT, new { action = MVC.Blog.ActionNames.Index, controller = MVC.Blog.Name })">
+                                <div class="form-group">
+                                    @Html.TextBox("search", null, new { placeholder = Common.Search, @class = "form-control" })
+                                    <button type="submit" class="le-btn">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <hr />
+                <section>
                     <div class="sticky-paper-head has-shadow">
                         <div class="content">
                             <h1>Tags</h1>
@@ -118,6 +142,7 @@
                         </div>
                     </div>
                 </section>
+                
            
             </div>
         </div>
