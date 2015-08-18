@@ -15,10 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @Styles.Render("~/css/combined")
     @RenderSection("HeaderContent", false)
-
+    @Html.Partial("_GoogleAnalytics")
 </head>
 
 <body>
+
     @Html.Hidden("RedirectToBlog", Url.Action("Index", "Blog"))
     @Html.Hidden("RedirectToRovian", Url.Action("Index", "Rovian"))
     @Html.Hidden("RedirectToMurilo", Url.Action("Index", "Murilo"))

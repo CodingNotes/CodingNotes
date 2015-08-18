@@ -7,16 +7,17 @@
         </div>
     </div>
 
-    <div class="big-name">
+    @*<div class="big-name">*@
         <div class="sticky-paper-head has-shadow ">
             <div class="content">
                 <h1>Coding Notes</h1>
             </div>
         </div>
-    </div>
+    @*</div>*@
 }
 @section HeaderContent {
     <link rel="canonical" href="@this.Request.Url.GetLeftPart(UriPartial.Authority)@Url.Content("~/")" />
+    <meta name="google-site-verification" content="4ZCdJdxAY7G2EhBGqaHb_r6DUREseYA4ca-uANOivRs" />
 }
 
 <div class="row">
@@ -139,6 +140,23 @@
                     <div class="sticky-paper-body has-shadow no-min-height">
                         <div class="content">
                             @{Html.RenderAction(MVC.Blog.PopularBlogEntries());}
+                        </div>
+                    </div>
+                </section>
+                <hr />
+                <section>
+                    <div class="sticky-paper-body has-shadow">
+                        <div class="content">
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- CodingNotesIndex -->
+                            <ins class="adsbygoogle"
+                                 style="display:block"
+                                 data-ad-client="ca-pub-3444447531311884"
+                                 data-ad-slot="3848684052"
+                                 data-ad-format="auto"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
                         </div>
                     </div>
                 </section>
